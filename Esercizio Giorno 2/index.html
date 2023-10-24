@@ -11,22 +11,24 @@
   </head>
   <body>
     <header>
-      <picture>
-        <img src="assets/img/logo.svg" alt="" />
+      <div>
+        <img src="assets/img/logo.svg" alt="logo-epicode" />
         <h2>Epicode - Il blog dei developers</h2>
-      </picture>
+      </div>
 
       <nav>
         <ul>
-          <a href="#"><li>Home</li></a>
-          <a href="#"><li>Articoli</li></a>
-          <a href="#"><li>Lavora con noi</li></a>
+          <a href="#" title="Home"><li>Home</li></a>
+          <a href="#" title="Elenco articoli"><li>Articoli</li></a>
+          <a href="#" title="Lavora con noi"><li>Lavora con noi</li></a>
         </ul>
       </nav>
     </header>
+<hr>
     <main>
+      <article>
       <h1>Come creare un template per i post</h1>
-      <h2>di Mario Rossi - pubblicato il 25-10-2020</h2>
+      <h3>di Mario Rossi - <span>pubblicato il 25-10-2020</span></h3>
       <p>
         La prima cosa da fare è suddividere in blocchi logici la pagina,
         identificando le parti comuni da applicare a tutte le pagine.
@@ -44,7 +46,8 @@
           <code>&lt;footer&gt;</code>
         </li>
       </ul>
-      <p>Formattazione del codice</p>
+
+      <h2>Formattazione del codice</h2>
 
       <p>
         Il testo dell'articolo dovrà essere formattato per identificare tutte le
@@ -110,7 +113,7 @@
       </table>
       <p>
         Un test di validazione potrà essere fatto tramite il tool online
-        <a href="#">-LINK ESTERNO- </a>dedicato allo scopo. Una volta
+        <a href="#" target="_blank">-LINK ESTERNO- </a>dedicato allo scopo. Una volta
         ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere
         stati dei veri developers come loro:
       </p>
@@ -123,7 +126,7 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-    </main>
+
     <section>
       <p>
         Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra
@@ -136,39 +139,47 @@
         <button type="submit">Iscriviti!</button>
       </form>
     </section>
-    <br />
+  </article>
     <aside>
-      <article>
+      <h2>Articoli coorelati</h2>
+      <div>
         <p>
-         <a href="#"> Articoli coorelati </a> <br />
-         <a href="#"> Validare il codice HTML </a> <br />
-         <a href="#"> Categoria: develop </a> <br />
-         <a href="#">  Data: 18-9-2020 </a>
+       
+          <a href="#"> Validare il codice HTML </a> 
+          <p> Categoria: develop </p>
+          <p>Data: 18-9-2020 </p> 
         </p>
-      </article>
-      <article>
-        <p>
-            <a href="#"> Correggere la sintassi </a> <br />
-                <a href="#"> Categoria: develop </a> <br />
-                    <a href="#"> Data: 16-9-2020 </a>
-        </p>
-      </article>
-      <article>
-        <p>
-            <a href="#"> Meno Kb nella pagina </a> <br />
-                <a href="#"> Categoria: ottimizzazione </a><br />
-                    <a href="#"> Data: 30-9-2020 </a>
-        </p>
-      </article>
+      </div>
+     <div>
+      
+          <a href="#"> Correggere la sintassi </a> 
+          <p> Categoria: develop </p>
+         <p> Data: 16-9-2020</p>
+        </div>
+      
+     
+   <div>
+       
+          <a href="#"> Meno Kb nella pagina </a> 
+          <p> Categoria: ottimizzazione </p>
+          <p>Data: 30-9-2020 </p> 
+        </div>
+      
     </aside>
+    </main>
+   
+    <br />
+  
 
     <footer>
       <p>Blog Epicode &copy;2023</p>
-      <p>
+    <address>
         Testata online di Mario Rossi, registrata con prot. n.213/2018 - via
         Luigi Einaudi 2 - Milano. P.IVA 00112233. <br />
-        info@epicode.school <a href="">-LINK EMAIL-</a>
-      </p>
+        info@epicode.school <a href="mailto:info@epicode.school">-LINK EMAIL-</a>
+      </address>
     </footer>
   </body>
 </html>
+
+
