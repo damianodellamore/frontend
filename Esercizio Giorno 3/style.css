@@ -1,0 +1,103 @@
+body{
+    height:100vh;
+}
+header{margin-top:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom:1px solid yellow;
+}
+
+header > img {
+    height:5rem;
+    padding-bottom: 15px;
+}
+
+nav{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(39, 126, 102)
+
+}
+nav > p {
+    font-size: 16pt;
+}
+
+main{ 
+  
+    display:flex;
+    justify-content: center;
+   
+    
+   margin-left: 400px;
+   margin-right:400px;
+}
+.mainContainer > h1 { text-align: center;
+font-size: 35pt;
+}
+.mainContainer > p {
+    font-size: 20pt;
+}
+.image{ 
+    display:flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.image > img {
+    height:48rem;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.449);
+}
+#caption {
+    text-align: center;
+    color:grey;
+    font-size: 20pt;
+}
+
+.featured {
+    margin-left: 35px;
+}
+.featured > p > span {
+    color:red;
+}
+.featured > p { font-size: 19pt;
+    color:rgb(39, 126, 102);
+    text-decoration: underline;
+}
+.lists { padding-top: 30px;
+
+    
+}
+
+.lists > h3 {
+    font-size: 28pt;
+    padding-bottom: 18px;
+    
+}
+.firstList {
+    border-top: 1px solid rgba(39, 126, 101, 0.275);
+}
+.firstList  > h4, h3 { font-size: 24px;
+    
+}
+.firstList > ul {
+    font-size: 1.4rem;
+    border-bottom: rgba(39, 126, 101, 0.275);
+}
+.method >ol{ font-size: 1.6rem;
+    font-weight: bold;
+    margin-left: 20px;
+
+}
+.method > p{ margin-left: 50px;
+    font-size: 1.55rem;
+}
+ footer{
+    margin-left:320px;
+    font-size: 18pt;
+    margin-bottom: 30px;
+ }
+ footer > span {
+    color:rgb(39, 126, 102);
+    text-decoration: underline; }
