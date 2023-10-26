@@ -1,0 +1,186 @@
+/* IMPOSTAZIONI GENERALI */
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 14pt;
+  width: 500px;
+  margin: auto;
+  height: 100vh;
+}
+body {
+  background-image: url(../img/sfondo.png);
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* HEADER */
+
+.header {
+  background-color: rgb(14, 113, 145);
+  color: white;
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.4rem;
+  box-shadow: 4px 4px 4px black;
+}
+.headerImage {
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+.headerImage > p {
+  padding-top: 4rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  color: white;
+}
+.nav li {
+  text-align: center;
+}
+.nav li > a {
+  color: white;
+  text-align: center;
+}
+
+/* MAIN */
+.main {
+  background-color: white;
+  padding: 20px 25px;
+  box-shadow: 4px 4px 4px black;
+  line-height: 1.7rem;
+  border: 1 px solid black;
+}
+main > h1,
+p {
+  padding: 0.5rem 0;
+}
+h1 {
+  font-size: 2rem;
+  margin: 2rem;
+  line-height: 2.4rem;
+}
+.sfocato p {
+  color: grey;
+  padding-top: 2rem;
+}
+strong {
+  color: purple;
+}
+.articolo > ul {
+  padding-left: 3rem;
+  list-style-type: circle;
+}
+.articolo > ol {
+  list-style-type: decimal;
+  padding-left: 3rem;
+  padding-bottom: 20px;
+}
+.tabella {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+table > caption {
+  font-style: italic;
+  font-weight: bold;
+}
+table {
+  margin: auto 0;
+
+  text-align: center;
+  line-height: 2.4rem;
+  border-bottom: 3px solid rgb(3, 15, 235);
+}
+td {
+}
+th { padding-top:25px;
+    padding-top:20px;
+  color:white;
+  background-color: rgba(33, 33, 160, 0.874);
+}
+tr:nth-child(2n + 2) {
+  background-color: rgba(128, 128, 128, 0.38);
+}
+.videoYoutube p > a {
+  color: aqua;
+}
+iframe {
+  border-radius: 12%;
+}
+code{
+    border:1px solid rgba(93, 87, 87, 0.979);
+    border-radius: 18%;
+}
+section {
+  background-color: rgba(128, 128, 128, 0.366);
+  text-align: center;
+  padding: 40px 15px;
+}
+section > h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20pt;
+}
+form > input {
+  font-size: 1.5rem;
+  border: none;
+  border-bottom: 2px dotted blue;
+}
+form > button {
+  font-size: 1.5rem;
+  color: white;
+  background-color: blue;
+  border: none;
+}
+aside > h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20pt;
+  margin-top: 80px;
+}
+.primoCoorelato,
+.secondoCoorelato,
+.terzoCoorelato {
+    margin: 25px 25px;
+  background-color: rgba(128, 128, 128, 0.354);
+ 
+}
+.primoCoorelato > a,
+.secondoCoorelato > a,
+.terzoCoorelato > a {
+  color: rgb(31, 110, 110);
+  
+}
+
+footer {
+
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: linear-gradient(rgb(14, 113, 145), black);
+  color: white;
+}
+footer address > a {
+  color: pink;
+}
+.centrareiFrame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#data{
+    text-align: end;
+}
