@@ -77,15 +77,36 @@ console.log(shoppingCartTotal());
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 function addToShoppingCart (){
-
+    shoppingCart.push( {
+        price: 28,
+        name: "articolo4",
+        id: "bho4",
+        quantity: 7
+    })
+return shoppingCart;
 };
-addToShoppingCart();
+console.log(addToShoppingCart(1));
 /* EXTRA 4
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
  Crea una funzione chiamata "maxShoppingCart" che riceve l'array "shoppingCart" e ritorna l'oggetto più costoso in esso contenuto.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function maxShoppingCart(shoppingCart) {
+    
+    if (shoppingCart.length === 0) {
+        return null;
+    }
+    let piuCostoso = shoppingCart[0];
+    for (let i = 1; i < shoppingCart.length; i++) { 
+        if (shoppingCart[i].price > piuCostoso.price) {  
+            piuCostoso = shoppingCart[i];
+        }
+    }
+    return piuCostoso;
+}
+
+console.log(maxShoppingCart(shoppingCart));
 
 /* EXTRA 5
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
@@ -93,26 +114,76 @@ addToShoppingCart();
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+function latestShoppingCart(shoppingCart){
+    return shoppingCart[shoppingCart.length -1]
+}
+console.log(latestShoppingCart(shoppingCart));
 /* EXTRA 6
  Crea una funzione chiamata "loopUntil" che riceve un numero intero come parametro con valore tra 0 e 9.
  La funzione è composta da un ciclo che stampa un numero casuale tra 0 e 9 finchè il numero casuale non è maggiore di x per tre volte di fila.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function loopUntil(x) {
 
+    if (x < 0 || x > 9) {
+        console.log("Il parametro deve essere tra 0 e 9.");
+        return;
+    }
+
+    let count = 0; 
+
+    while (true) { 
+        let randomNum = Math.floor(Math.random() * 10); 
+        console.log(randomNum); 
+
+        if (randomNum > x) {
+            count++; 
+            if (count === 3) {
+                console.log("END: tre volte di fila > x")
+                break; 
+            }
+        } else {
+            count = 0; 
+        }
+    }
+}
+console.log(loopUntil(5));
 /* EXTRA 7
 Crea una funzione chiamata "average" che riceve un array come parametro e ne ritorna la media aritmetica. La funzione salta automaticamente i valori non numerici nell'array.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function average(array) {
+    let somma = 0;
+    let divisore = 0;
+
+    for (let i = 0; i < array.length; i++) {
+        
+        if (typeof array[i] === 'number') {
+            somma += array[i]; 
+            divisore++; 
+        }
+    }
+
+    
+    if (divisore === 0) {
+        return NaN; // 
+    }
+
+    return somma / divisore; 
+}
+
+console.log(average([1, 5, 6, 7])); 
 
 /* EXTRA 8
  Crea una funzione chiamata "longest" che trova la stringa più lunga all'interno di un array di stringhe fornito come parametro.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+function longest(){
+    
+}
 /* EXTRA 9
  Crea una funzione per creare un filtro anti-spam per la tua casella email. La funzione riceve un parametro stringa chiamato "emailContent", e torna un valore booleano.
  La funzione deve ritornare true se "emailContent" non contiene le parole "SPAM" o "SCAM".
