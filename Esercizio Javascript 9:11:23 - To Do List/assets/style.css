@@ -1,0 +1,42 @@
+
+
+.container{
+    height:100vh;
+    background: url(./Images/sfondo.png);
+    background-size: cover;
+}
+header{padding-top: 5rem;
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    text-decoration: underline;
+    font-size: 4rem;
+}
+
+.todolist{font-family: 'Satisfy', cursive;
+   text-align: center;
+    height:150px;
+    
+}
+ul{font-size: 32pt;
+    list-style: none;
+}
+.todolist input{font-size: 25pt;
+   width: 30rem;
+    height:50px;
+    text-align: center;
+    border:1px dotted gray;
+    border-radius: 5px;
+    font-family: 'Satisfy', cursive;
+    padding: 15px 0;
+    
+
+}
+.todolist button{ font-size: 24pt;
+    border-radius: 30%;
+    padding: 15px 20px;
+
+}
+
+footer{font-family: 'Satisfy', cursive;
+    text-align: center;
+}
