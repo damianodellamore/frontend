@@ -1,0 +1,43 @@
+body {
+  background: url(./img/sfondo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Syne Mono", monospace;
+}
+
+.titolo {
+  background: linear-gradient(#a9409f, #16cba481);
+}
+.titolo h1 {
+  padding: 30px 0;
+  font-size: 86pt;
+  color: #ffffff;
+  text-align: center;
+}
+#tombolaContainer > div,
+#tabellina > div {
+  text-align: center;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  display: inline-block;
+  padding: 25px 25px;
+  margin: 5px 5px;
+  border-radius: 20%;
+  font-size: 1.5em;
+  color: blue;
+  border: 1px double black;
+}
+.button {
+  text-align: center;
+  margin: 30px 0px;
+}
+.button button {
+  border: 1px double black;
+  border-radius: 18px;
+}
+.button button:hover {
+  cursor: pointer;
+  background-color: red;
+}
