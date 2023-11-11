@@ -44,8 +44,8 @@ buttonRandom.addEventListener("click", () => {
 function creaTabellina(tabellinaIndex) {
   for (let i = 1; i < 25; i++) {
     let celleNumerate = document.createElement("div");
-    celleNumerate.innerText = i;
-    celleNumerate.id = "tabellina" + tabellinaIndex + "Cella-" + i; 
+    celleNumerate.innerText = (Math.floor(Math.random() * 76))+1;
+    celleNumerate.id = "tabellina" + tabellinaIndex + "Cella-" +(Math.floor(Math.random() * 76)+1) ; 
     tabellina.appendChild(celleNumerate);
   }
 }
@@ -53,7 +53,3 @@ function creaTabellina(tabellinaIndex) {
 for (let i = 0; i < quanteTabelline; i++) {
   creaTabellina(i); 
 }
-
-buttonRandom2.addEventListener("click", () => {
-  
-});
