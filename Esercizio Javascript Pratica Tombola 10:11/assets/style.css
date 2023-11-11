@@ -4,19 +4,23 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   font-family: "Syne Mono", monospace;
+  
 }
 
 .titolo {
   background: linear-gradient(#a9409f, #16cba481);
+  
+
 }
 .titolo h1 {
   padding: 30px 0;
-  font-size: 86pt;
+  font-size: 5rem;
   color: #ffffff;
   text-align: center;
+  box-sizing: border-box;
 }
 #tombolaContainer > div,
-#tabellina > div {
+#tabellina > div { 
   text-align: center;
   height: 25px;
   width: 25px;
@@ -40,4 +44,10 @@ body {
 .button button:hover {
   cursor: pointer;
   background-color: red;
+}
+#tombolaContainer, #tabellina{
+  text-align: center;
+}
+footer{
+  text-align: center;
 }

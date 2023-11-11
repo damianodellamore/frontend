@@ -174,7 +174,7 @@ addToTheSecond();
 
       const makeItClickable = function () {
         const h1 = document.querySelector("h1");
-        h1.innerText = h1.innerText.slice(-1)
+        h1.innerText = h1.innerText.slice(0, -1)
       }
  
       /* ESERCIZIO 10
@@ -196,9 +196,26 @@ addToTheSecond();
       const generateTable = function () {
         const area = document.getElementById('tableArea');
         
-        area.innerHTML= '<table><tr> <th> Immagine </th> <th> Nome Prodotto </th> <th> Quantità </th> <th> Prezzo </th> </tr></table> ';
+        let boh = area.innerHTML= '<table><tr> <th> Immagine </th> <th> Nome Prodotto </th> <th> Quantità </th> <th> Prezzo </th> </tr></table> ';
+        for (let i =0; i<5; i ++){
+          let tr = document.createElement('tr');
+          let td1 = document.createElement('td');
+          td1.innerText = "Test"
+          tr.appendChild(td1);
+          let td2 = document.createElement('td');
+          td2.innerText = "Test"
+          tr.appendChild(td2);
+          let td3 = document.createElement('td');
+          td3.innerText = "Test"
+          tr.appendChild(td3);
+          let td4 = document.createElement('td');
+          td4.innerText = "Test"
+          tr.appendChild(td4);
+          area.appendChild(tr)
+
+        }
       }
-generateTable();
+        generateTable();
       /* ESERCIZIO 12
        Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
     */
