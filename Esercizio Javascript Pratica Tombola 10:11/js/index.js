@@ -29,11 +29,8 @@ buttonRandom.addEventListener("click", () => {
     numeriSelezionati.push(randomNumber);
   }
 
-  do {
-    randomNumber = Math.floor(Math.random() * 76) + 1;
-  } while (numeriSelezionati.includes(randomNumber));
+ 
 
-  numeriSelezionati.push(randomNumber);
 
   for (let i = 0; i < quanteTabelline; i++) {
     let cellaSelezionata = document.querySelector("#tabellina" + i + "Cella-" + randomNumber);
