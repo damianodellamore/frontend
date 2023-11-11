@@ -28,6 +28,19 @@ buttonRandom.addEventListener("click", () => {
     cellaSelezionata.style.backgroundColor = "yellow";
     numeriSelezionati.push(randomNumber);
   }
+
+  do {
+    randomNumber = Math.floor(Math.random() * 76) + 1;
+  } while (numeriSelezionati.includes(randomNumber));
+
+  numeriSelezionati.push(randomNumber);
+
+  for (let i = 0; i < quanteTabelline; i++) {
+    let cellaSelezionata = document.querySelector("#tabellina" + i + "Cella-" + randomNumber);
+    if (cellaSelezionata) {
+      cellaSelezionata.style.backgroundColor = "orange";
+    }
+  }
 });
 
 //console.log(numeriSelezionati)
@@ -45,17 +58,5 @@ for (let i = 0; i < quanteTabelline; i++) {
 }
 
 buttonRandom2.addEventListener("click", () => {
-  let randomNumber;
-  do {
-    randomNumber = Math.floor(Math.random() * 76) + 1;
-  } while (numeriSelezionati.includes(randomNumber));
-
-  numeriSelezionati.push(randomNumber);
-
-  for (let i = 0; i < quanteTabelline; i++) {
-    let cellaSelezionata = document.querySelector("#tabellina" + i + "Cella-" + randomNumber);
-    if (cellaSelezionata) {
-      cellaSelezionata.style.backgroundColor = "orange";
-    }
-  }
+  
 });
