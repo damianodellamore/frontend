@@ -2,11 +2,10 @@ let tombola = document.querySelector("#tombolaContainer");
 let numeriSelezionati = [];
 let tabellina = document.querySelector("#tabellina");
 
-let quanteTabelline = +prompt("quante tabelline acquisti?");
-
+let quanteTabelline = +prompt("Quante tabelline acquisti?");
 
 function creaTombola() {
-  for (let i = 1; i < 77; i++) {
+  for (let i = 1; i <= 76; i++) {
     let celleNumerate = document.createElement("div");
     celleNumerate.innerText = i;
     celleNumerate.id = "cella-" + i;
@@ -15,22 +14,41 @@ function creaTombola() {
 }
 creaTombola();
 
+function generaNumeriUnici() {
+  let numeri = new Set();
+  while (numeri.size < 24) {
+    numeri.add(Math.floor(Math.random() * 76) + 1);
+  }
+  return [...numeri];
+}
+
+function creaTabellina(tabellinaIndex) {
+  let numeriTabellina = generaNumeriUnici();
+  numeriTabellina.forEach(numero => {
+    let celleNumerate = document.createElement("div");
+    celleNumerate.innerText = numero;
+    celleNumerate.id = "tabellina" + tabellinaIndex + "Cella-" + numero;
+    tabellina.appendChild(celleNumerate);
+  });
+}
+
+for (let i = 0; i < quanteTabelline; i++) {
+  creaTabellina(i);
+}
+
 let buttonRandom = document.querySelector("#buttonRandom");
-let buttonRandom2 = document.querySelector("#buttonRandom2");
 buttonRandom.addEventListener("click", () => {
   let randomNumber;
   do {
-    randomNumber = Math.floor(Math.random() * 76);
+    randomNumber = Math.floor(Math.random() * 76) + 1;
   } while (numeriSelezionati.includes(randomNumber));
+  numeriSelezionati.push(randomNumber);
 
-  let cellaSelezionata = document.querySelector("#cella-" + randomNumber);
-  if (cellaSelezionata) {
-    cellaSelezionata.style.backgroundColor = "yellow";
-    numeriSelezionati.push(randomNumber);
-  }
-
- 
-
+  document.querySelectorAll("[id^='cella-']").forEach(cella => {
+    if (parseInt(cella.innerText) === randomNumber) {
+      cella.style.backgroundColor = "yellow";
+    }
+  });
 
   for (let i = 0; i < quanteTabelline; i++) {
     let cellaSelezionata = document.querySelector("#tabellina" + i + "Cella-" + randomNumber);
@@ -39,17 +57,3 @@ buttonRandom.addEventListener("click", () => {
     }
   }
 });
-
-//console.log(numeriSelezionati)
-function creaTabellina(tabellinaIndex) {
-  for (let i = 1; i < 25; i++) {
-    let celleNumerate = document.createElement("div");
-    celleNumerate.innerText = (Math.floor(Math.random() * 76))+1;
-    celleNumerate.id = "tabellina" + tabellinaIndex + "Cella-" +(Math.floor(Math.random() * 76)+1) ; 
-    tabellina.appendChild(celleNumerate);
-  }
-}
-
-for (let i = 0; i < quanteTabelline; i++) {
-  creaTabellina(i); 
-}
