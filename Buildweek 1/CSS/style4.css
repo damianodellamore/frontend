@@ -1,0 +1,119 @@
+body {
+    background-image: url(../IMG/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    background-attachment: fixed;
+    background-position: center;
+   
+}
+main{text-align: center;
+  
+    margin: 5rem 10rem;
+    padding: 3rem 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-size: 3rem;
+}
+p{
+    font-size: 1.4rem;
+}
+#starRating{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 2rem;
+    width: 85%;
+}
+header img {
+    width: 12rem;
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+.intro{
+    text-align: center;
+}
+
+.final{text-align: center;
+    
+  
+}
+.star {
+    width: 4rem;
+   
+  margin: 0 1rem;
+    filter: brightness(0.13);
+    cursor: pointer;
+}
+
+.starHover {
+    filter: brightness(1);
+}
+
+.starClicked {
+    filter: brightness(1);
+}
+
+button {
+    cursor: pointer;
+    padding: 1rem 2.5rem;
+    border: none;
+    box-shadow: 0 0 23px  #00FFFF;       /* Valore 1: spostamento dx/sx | Valore 2: Spostamento su/giu | Valore 3: sfumatura | Valore 4: spread ombra | Valore 5: colore */
+    text-transform: uppercase;
+    background-color: #00FFFF;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#comment{
+    border: none;
+    border-bottom: 3px solid #D20094;
+    width: 80%;
+    margin:3rem 0;
+    background-color: transparent;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    color: white;
+    outline: none; 
+    padding-left: 1.5rem;
+}
+
+#comment:focus {
+
+    outline: none;
+}
+
+@media (max-width: 800px){
+.star{
+    margin: 0;
+}
+main{
+    margin: 3rem 2rem;
+}
+}
+@media (max-width: 450px){
+    header{
+        text-align: center;
+        
+    }
+    header img{
+        width: 8rem;
+        margin-left: 0;
+    }
+    .star{ 
+        width: 2rem;
+    }
+    #comment{
+        padding-left: 0;
+    }
+    main{
+        margin-top: 0;
+        padding-top: 1rem;
+    }
+}

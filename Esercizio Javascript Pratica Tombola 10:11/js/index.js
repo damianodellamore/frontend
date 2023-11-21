@@ -42,8 +42,9 @@ buttonRandom.addEventListener("click", () => {
   do {
     randomNumber = Math.floor(Math.random() * 76) + 1;
   } while (numeriSelezionati.includes(randomNumber));
+  
   numeriSelezionati.push(randomNumber);
-
+ 
   document.querySelectorAll("[id^='cella-']").forEach(cella => {
     if (parseInt(cella.innerText) === randomNumber) {
       cella.style.backgroundColor = "yellow";
@@ -55,5 +56,10 @@ buttonRandom.addEventListener("click", () => {
     if (cellaSelezionata) {
       cellaSelezionata.style.backgroundColor = "orange";
     }
+  }
+});
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    buttonRandom.click();
   }
 });
