@@ -30,9 +30,7 @@ header {
   position:sticky;
   top:0;
 }
-main{
-  position: relative;
-}
+
 
 main h1+img{width: 450px;
   position: relative;
@@ -47,9 +45,7 @@ section h2{
   position: relative;
   top:-40px;
 }
-aside div{
-  position: relative;
-}
+
 .fas.fa-tag{
  font-size: 30pt;
 position:absolute;
@@ -92,12 +88,12 @@ font-size: 18pt;
     padding: 1em;
   }
   .pulsanti{
-    position: absolute;
+    position: fixed;
     top:0;
     right: 0;
   }
   .return{
-    position: absolute;
+    position: fixed;
     bottom:0;
   }
 }
