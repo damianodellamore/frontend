@@ -40,18 +40,23 @@ main h1+img{width: 450px;
   main p +img{
     float: left;
   }
-section h2{
-  width: 25%;
-  position: relative;
-  top:-40px;
-}
 
-.fas.fa-tag{
- font-size: 30pt;
-position:absolute;
-right: 0;
-top:0
-}
+  section h2{
+    width: 25%;
+    position:relative;
+    top:-40px;
+  }
+  aside div{
+    position: relative;
+  }
+
+  .fas.fa-tag{
+   font-size: 30pt;
+   position: absolute;
+   right: 0;
+   top:0;
+
+  }
 .pulsanti{
 
 position: fixed;
