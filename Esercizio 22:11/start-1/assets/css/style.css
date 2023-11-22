@@ -29,6 +29,7 @@ header {
   padding: 2em 1.5em;
   position:sticky;
   top:0;
+  z-index: 1;
 }
 
 
@@ -36,6 +37,7 @@ main h1+img{width: 450px;
   position: relative;
  top:-30px;
  left: 5px;
+ z-index: 0;
   }
   main p +img{
     float: left;
@@ -48,6 +50,7 @@ main h1+img{width: 450px;
   }
   aside div{
     position: relative;
+    z-index: 2;
   }
 
   .fas.fa-tag{
