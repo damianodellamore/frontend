@@ -106,7 +106,7 @@ nav p span {
 }
 .flexible-article img {
   margin: 25px;
-  width: 350px;
+  width: 20rem;
 }
 
 @media screen and (max-width: 576px) {
@@ -132,6 +132,11 @@ nav p span {
   }
   .flexible-article img {
     order: 2;
+  }
+  .group{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
   }
   nav {
     display: flex;
@@ -161,7 +166,8 @@ nav p span {
         width: 20%;
         
     }
-    .group{
+    .group{margin: 20px;
+      text-align: start;
         display:flex;
         flex-direction: column;
     }
@@ -170,7 +176,8 @@ nav p span {
         order:2
         
     }
-    .latest{
+    .latest{margin: 20px;
+      text-align: start;
         display:flex;
         flex-direction: column;
         order:3
