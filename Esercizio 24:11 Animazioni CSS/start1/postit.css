@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(83, 83, 83);
+}
+.container{height:100%;
+    background-color: rgb(83, 83, 83);
+    font-family: Indie Flower;
+    display:flex;
+    flex-wrap: wrap;
+   justify-content: center;
+
+   font-size: 18pt;
+}
+h2{
+    font-size: 30pt;
+    font-weight: bold;
+}
+
+.yellow,.green,.purple{display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin : 25px;
+    width: 280px;
+    height:250px;
+    line-height: 3rem;
+    
+    box-shadow: 4px 4px 4px rgba(36, 34, 34, 0.682);
+    transition: transform 0.3s ease;
+    animation: appiccicaPostIt 2s ease-out alternate;
+}
+.yellow{
+    background-image: linear-gradient(to bottom, rgb(238,241,174), rgba(238,241,174, 0.5));
+    transform: rotate(-4deg);
+    
+}
+.green{
+    background-image: linear-gradient(to bottom, rgb(185,239,184), rgba(185,239,184, 0.5));
+  
+     transform: rotate(8deg);
+}
+.purple{
+    background-image: linear-gradient(to bottom, rgb(166,163,201), rgba(166,163,201, 0.5));
+      transform: rotate(-8deg);
+}
+.yellow:hover, .green:hover, .purple:hover {
+    transform: scale(1.25);
+}
+@keyframes appiccicaPostIt {
+    0% {
+        transform: scale(0.1) translateZ(-1000px);
+        opacity: 0;
+    }
+    70% {
+        transform: scale(1.2) translateZ(0px); 
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1) translateZ(0); 
+    }
+}
