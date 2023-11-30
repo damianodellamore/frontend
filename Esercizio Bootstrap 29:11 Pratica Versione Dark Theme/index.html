@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="it" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizio Agenzia Viaggi</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+        /* Stile per il badge */
+        .badge-hot {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: red;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 0.8em;
+        }
+        </style>
+        
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <!--NAVBAR-->
+      <nav
+        class="navbar navbar-expand-lg"
+        style="background-color: #a3d0f005"
+        data-bs-theme="light"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand ms-5" href="#"
+            ><img src="logo spaceship,.png" width="50px" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarColor03"
+            aria-controls="navbarColor03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbarColor03">
+            <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+              <li class="nav-item ">
+                <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#saldi">Saldi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#welcome-summer">Welcome Summer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#last-minute">Last Minute</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#diconos">Recensioni</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Cerca posti da sogno"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-info me-5" type="submit">
+                Cerca
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="container d-flex justify-content-center">
+            
+    
+        <button type="button"  data-bs-toggle="collapse" data-bs-target="#collapseSection" class="btn btn-outline-info">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5M8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6"></path>
+</svg>
+           
+          </button>
+        </div>
+        <div class="px-4 py-5 my-5 border border-info shadow-sm collapse show" id="collapseSection">
+          <h1 class="display-5 text-white">Damiano's Travel Agency</h1>
+          <hr />
+          <div class="col-lg-6">
+            <p class="lead mb-4 fst-italic">
+              Scopri le destinazioni che più fanno al caso tuo, realizza i tuoi
+              sogni!
+            </p>
+            <div class="d-grid gap-2 d-sm-flex">
+              <button
+                type="button"
+                class="btn btn-info btn-lg px-5 gap-3 text-lig"
+              >
+                Prenota Ora
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container d-flex justify-content-between my-3" id="saldi">
+        <h4 class="fs-2">Saldi</h4>
+        <p class="fs-6 text-info">Nascondi sezione</p>
+      </div>
+      <div class="container d-flex justify-content-around">
+        <div class="row p-0">
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card border-2 border-info">
+              <img src="miracle2.png" class="card-img-top" alt="ibiza" />
+              <div class="card-body">
+                <h5 class="card-title">Skies</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#" class="btn btn-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card border-2 border-info">
+              <img src="Miracle3.png" class="card-img-top" alt="Giappone" />
+              <div class="card-body">
+                <h5 class="card-title">Life</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#" class="btn btn-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card border-2 border-info">
+              <img src="miracle.png" class="card-img-top" alt="Sardegna" />
+              <div class="card-body">
+                <h5 class="card-title">Miracle</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#" class="btn btn-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3  col-lg-3">
+            <div class="card border-2 border-info d-sm-block d-md-none d-lg-block">
+              <img src="miracle4.png" class="card-img-top" alt="ibiza" />
+              <div class="card-body">
+                <h5 class="card-title">a Dream</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#" class="btn btn-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container d-flex justify-content-between my-5" id="welcome-summer">
+        <h4 class="fs-2">Welcome Summer</h4>
+        <p class="fs-6 text-info">Nascondi sezione</p>
+      </div>
+      <div class="container ">
+        <div class="row ">
+          <div class="col-6 col-md-4 col-lg-4 my-3">
+            <div class="card border-2 border-info shadow-lg">
+              <img src="miracle2.png" class="card-img-top" alt="ibiza" />
+              <div class="card-body">
+                <h5 class="card-title">Ibiza</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#" class="btn btn-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-4 my-3">
+            <div class="card border-2 border-info shadow-lg">
+              <img src="miracle4.png" class="card-img-top" alt="ibiza" />
+              <div class="card-body">
+                <h5 class="card-title">Ibiza</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#" class="btn btn-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-4 my-3">
+            <div class="card border-2 border-info shadow-lg">
+              <img src="miracle.png" class="card-img-top" alt="ibiza" />
+              <div class="card-body">
+                <h5 class="card-title">Ibiza</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#" class="btn btn-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-4 my-3">
+            <div class="card border-2 border-info shadow-lg">
+              <img src="Miracle3.png"card-img-top" alt="ibiza" />
+              <div class="card-body">
+                <h5 class="card-title">Ibiza</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#" class="btn btn-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-4 my-3">
+            <div class="card border-2 border-info shadow-lg">
+              <img src="miracle2.png" class="card-img-top" alt="ibiza" />
+              <div class="card-body">
+                <h5 class="card-title">Ibiza</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#" class="btn btn-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-4 my-3">
+            <div class="card border-2 border-info shadow-lg">
+              <img src="miracle4.png" class="card-img-top " alt="ibiza" />
+              <div class="card-body">
+                <h5 class="card-title">Ibiza</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#" class="btn btn-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container my-5 " >
+        <h4 class="fs-2">Offerta del giorno</h4>
+        <div class="row">
+            <div class="col-lg-6 col-md-8 col-sm-12">
+                <img src="Miracle3.png" class="img-fluid shadow">
+            </div>
+            <div class="col-lg-6 col-md-4 col-sm-12">
+                <div class="scritta">
+                    <h3 class="fs-1 fw-lighter">Fushifaru <br> Maldives</h3>
+                    <p class="fw-lighter">15.01.2024-31.01.2024</p>
+                    <p class="fw-lighter">Ville a partire da 500€, non fartele sfuggire!</p>
+                    <button class="btn btn-dark text-white rounded">Best Offer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container my-4" id="last-minute">
+        <h4 class="fs-2">Last Minute</h4>
+        <div class="row ">
+            <div class="col my-2 ">
+                <img src="Ibiza.jpeg" width="170px" class=" shadow-lg rounded">
+            </div>
+            <div class="col my-2">
+                <img src="Ibiza.jpeg" width="170px" class=" shadow-lg rounded">
+            </div>
+            <div class="col my-2">
+                <img src="Ibiza.jpeg" width="170px" class=" shadow-lg rounded">
+            </div>
+            <div class="col my-2">
+                <img src="Ibiza.jpeg" width="170px" class=" shadow-lg rounded">
+            </div>
+            <div class="col my-2">
+                <img src="Ibiza.jpeg" width="170px" class=" shadow-lg rounded">
+            </div>
+            <div class="col my-2">
+                <img src="Ibiza.jpeg" width="170px" class=" shadow-lg rounded">
+            </div>
+        </div>
+    </div>
+    <div class="container" id="dicono">
+        <h4 class="fs-3 text-center my-5">Dicono di noi</h4>
+        <div class="row">
+            <div class="col d-flex">
+                <img src="logo spaceship,.png" width="50px" height="50px" class="me-4 mb-4 rounded-5 " alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sed assumenda modi, hic nostrum atque fugit maxime fuga saepe architecto tempora ea, ullam a quaerat blanditiis repellendus dolorem, unde illum!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex">
+                <img src="logo spaceship,.png" width="50px" height="50px" class="me-4 mb-4 rounded-5" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sed assumenda modi, hic nostrum atque fugit maxime fuga saepe architecto tempora ea, ullam a quaerat blanditiis repellendus dolorem, unde illum!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex">
+                <img src="logo spaceship,.png"width="50px" height="50px" class="me-4 mb-4 rounded-5"  alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sed assumenda modi, hic nostrum atque fugit maxime fuga saepe architecto tempora ea, ullam a quaerat blanditiis repellendus dolorem, unde illum!</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-center bg-black ">
+        <footer class="py-3 my-0">
+            <button class="btn btn-dark border border-danger my-4" id="alert">Conta i Viaggi</button>
+            <button class="btn btn-dark border border-danger my-4" id="rimuovi">Rimuovi le card</button>
+            <button class="btn btn-dark border border-light my-4" data-bs-toggle="modal" data-bs-target="#emailModal">Contattaci</button>
+            <p class="text-center text-light ">© 2023 Company, Inc</p>
+          </footer>
+    </div>
+    <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            
+            <div class="modal-header">
+              <h5 class="modal-title" id="emailModalLabel">Invia un Messaggio</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+           
+              <div class="mb-3">
+                <label for="emailInput" class="form-label">Indirizzo Email</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="nome@example.com">
+              </div>
+           
+              <div class="mb-3">
+                <label for="messageTextarea" class="form-label">Messaggio</label>
+                <textarea class="form-control" id="messageTextarea" rows="3"></textarea>
+              </div>
+            </div>
+        
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+              <button type="button" class="btn btn-primary">Invia Messaggio</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
