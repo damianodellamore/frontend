@@ -1,0 +1,49 @@
+@import 'override-bootstrap';
+
+body{
+    font-family: $display-font-family;
+    button.btn-primary{
+        background-color: $success;
+        border:none;
+
+    }
+    .ciao{
+        background-color: $background-hero;
+ 
+    }
+    .tablet{
+        @media (max-width:968px) {
+          margin: 0 auto;
+            
+        }
+    }
+    .list{
+        display:flex;
+        list-style: none;
+        li{ padding: 0 15px;
+       
+
+        }
+      
+    }
+}
+.flexa{
+    @media (max-width:568px){
+        display:flex;
+        flex-direction: column;
+        align-items: start;
+        margin-left: 40px;
+    }
+}
+.displaynone{
+    @media(max-width:568px){
+        display:none;
+    }
+}
+.footer{
+    @media(max-width:568px){
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
