@@ -34,7 +34,7 @@ function creaCards() {
         cardElement.className = 'col-md-4 col-sm-6 mb-4'; 
 
         const cardContent = `
-            <div class="card">
+            <div class="card h-100">
                 <img src="${oggetto.img}" class="card-img-top" alt="Immagine del libro">
                 <div class="card-body">
                     <h5 class="card-title">${oggetto.title}</h5>
